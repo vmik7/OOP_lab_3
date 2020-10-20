@@ -17,7 +17,7 @@ private:
 public:
 	// Конструкторы со списками инициализации
 	my_vector(int _x = 0, int _y = 0, int _z = 0) : x(_x), y(_y), z(_z) {}
-    my_vector(int x_0, int y_0, int z_0, int x_1, int y_1, int z_1) : x(x_1 - x_0), y(y_1 - y_0), z(z_1 - z_0) {}
+   	my_vector(int x_0, int y_0, int z_0, int x_1, int y_1, int z_1) : x(x_1 - x_0), y(y_1 - y_0), z(z_1 - z_0) {}
 	
 	// Доступ к координатам вектора
 	int get_x() const { return this->x; }
