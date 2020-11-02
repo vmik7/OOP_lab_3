@@ -57,16 +57,6 @@ void set_y(int value) { this->y = value; }
 void set_z(int value) { this->z = value; }
 ```
 
-### Изменение координат
-
-Функции `set_x`, `set_y` и `set_z` позволяют изменить соответственно одну из координат вектора.
-
-```cpp
-void set_x(int value) { this->x = value; }
-void set_y(int value) { this->y = value; }
-void set_z(int value) { this->z = value; }
-```
-
 ### Получение длины вектора
 
 Метод `length` возвращает длину веткора. Вычисляет её как корень из суммы квадратов координат.
