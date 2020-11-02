@@ -12,12 +12,12 @@ using namespace std;
 
 class my_vector {
 private:
-    int x, y, z;
+	int x, y, z;
 
 public:
 	// Конструкторы со списками инициализации
 	my_vector(int _x = 0, int _y = 0, int _z = 0) : x(_x), y(_y), z(_z) {}
-    my_vector(int x_0, int y_0, int z_0, int x_1, int y_1, int z_1) : x(x_1 - x_0), y(y_1 - y_0), z(z_1 - z_0) {}
+    	my_vector(int x_0, int y_0, int z_0, int x_1, int y_1, int z_1) : x(x_1 - x_0), y(y_1 - y_0), z(z_1 - z_0) {}
 
 	// Доступ к координатам вектора
 	int get_x() const { return this->x; }
@@ -26,8 +26,8 @@ public:
 
 	// Изменение координат
 	void set_x(int value) { this->x = value; }
-    void set_y(int value) { this->y = value; }
-    void set_z(int value) { this->z = value; }
+	void set_y(int value) { this->y = value; }
+	void set_z(int value) { this->z = value; }
 
 	// Получение длины вектора
 	double length() const {
@@ -49,7 +49,7 @@ public:
 		return this->x * t.x + this->y * t.y + this->z * t.z;
 	}
 
-	// Вычисление косинуса угла междлу векторами
+	// Вычисление косинуса угла между векторами
 	double cos(const my_vector& t) const {
 		return (double)(*this * t) / (this->length() * t.length());
 	}
@@ -108,16 +108,16 @@ int main() {
 	cout << sum.get_x() << " " << sum.get_y() << " " << sum.get_z() << endl;
 	cout << "Длина: " << sum.length() << endl;
 
-    my_vector dif = a - b;
-    cout << "\nКоординаты разности этих векторов:\n";
-    cout << dif.get_x() << " " << dif.get_y() << " " << dif.get_z() << endl;
-    cout << "Длина: " << dif.length() << endl;
+	my_vector dif = a - b;
+	cout << "\nКоординаты разности этих векторов:\n";
+	cout << dif.get_x() << " " << dif.get_y() << " " << dif.get_z() << endl;
+	cout << "Длина: " << dif.length() << endl;
 
-    cout << "\nСкалярное произведение этих векторов:\n";
-    cout << a * b << endl;
+	cout << "\nСкалярное произведение этих векторов:\n";
+	cout << a * b << endl;
 
-    cout << "\nКосинус угла между векторами:\n";
-    cout << a.cos(b) << endl;
+	cout << "\nКосинус угла между векторами:\n";
+	cout << a.cos(b) << endl;
 
-    return 0;
+	return 0;
 }
